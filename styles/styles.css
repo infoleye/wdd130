@@ -1,10 +1,20 @@
+wildcard {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Century-Gothic, Arial, sans-serif;
+}
 :root {
    --heading-backgroung-color: rgb(170, 146, 216);
    --heading-text-color: #4c0404;
-   --heading-font: 'Century-Gothic' Helvatica, sans-serif; 
-   --padding: 1rem;
-   --border: 10px solid rgb(61, 4, 4);
-   --border2: 5px solid rgb(88, 8, 201);
+   --heading-font: 'Century-Gothic' Arial, sans-serif; 
+   --padding: 2px;
+   --border: 10px solid rgb(61, 4, 4 / 0.1);
+   --border2: 5px solid rgb(88, 8, 201 / 0.1);
    --background-color: #deb7b7;
    --text-font: 'Calibri', cursive, sans-serif;
    --border-top: dashed rgb(3, 112, 49);
@@ -28,38 +38,43 @@ nav a {
 
 h1 {
     color: var(--heading-text-color);
-    font-style: var(--heading-font);
+    padding: .5rem;
 }
 
 main img {
+    float: right;
     width: 150px;
     height: auto;
-    border: var(--border2);
-    padding: 10px;
+    border: var(--border);
+    padding: var(--padding);
     box-shadow: 0 0 30px gray;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
-    padding: 0;
+    margin: 1rem;
 }
 
 aside {
     width: 30rem;
-    margin: 1rem;
-    border: var(--border);
-    padding: var(--padding);
-    background-color: var(--background-color);
-    color: var(--heading-text-color);
     text-align: center;
     font: var(--text-font);
+    position: relative;
 
 }
 
-img {
-    width: 100px;
+aside img {
+    width: 200px;
     height: auto;
 
 }
+
+aside h2 {
+    position: absolute;
+    top: 10px;
+    left: 220px;
+}
+
 
 footer {
     margin-top: 1rem;
@@ -68,5 +83,19 @@ footer {
 
 }
 
+/* Class Selector */
 
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0 / 10%);
+    padding: 1rem;
+    background-color: #863150;
+    color: #fcfcfc;
+    width: 30rem;
+}
+
+
+.indent {
+    padding-left: 2rem;
+}
  

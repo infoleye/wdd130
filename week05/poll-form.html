@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/poll-form.css">
+
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | BABATUNDE JOHN OGUNLEYE | HTML Form - User Poll</h1>
+
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!-- form elements will go here-->
+                 <!--Using label and input element -->
+                 <div class="form-item column2">
+                 <label for="fullname">Full Name:</label>
+                 <input type="text" id="fullname" name="fullname">
+                 </div>
+                 <div class="form-item column2">
+                 <label for="useremail">Email:</label>
+                 <input type="text" id="useremail" name="useremail">
+                 </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <!-- form elements will go here-->
+                 <!--Using a select element -->
+                 <div class="form-item column1">
+                 <label for="browser">What is your favorite internet browser?</label>
+                 <select id="browser" name="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="Opera">Opera</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                    <option value="brave">Brave</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="netscape">Netscape</option>
+                    <option value="other">Other</option>
+
+                    </select>
+                 </div>
+                 <!--Using a check-box element -->
+                 <div class="form-item column1">
+                 <label for="pet">Do you have a household pet?</label>
+                 <input type="checkbox" id="pet" name="pet">
+                 </div>
+                 <div class="form-item column3">
+                 <label for="feedback">List the places you have lived:</label>
+                 <textarea id="feedback" name="feedback" rows="6" placeholder="Gwarinpa Abuja, Ikeja Lagos, Benin Edo, Ibadan Oyo"></textarea>
+                 </div>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2025 | HTML Form - User Poll Activity | Babatunde John Ogunleye</p>
+    </footer>
+    
+</body>
+</html>

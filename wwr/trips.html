@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips | The Rapid Splash </title>
+    <meta name="description" content="Let us have the Trips to Remember!!.">
+    <meta name="author" content="Babatunde John Ogunleye">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="images/therapidsplash.jpg" alt="Rapid Splash logo"></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="trips">
+            <h2>Trips</h2>
+        </section>
+        <section class="trips-layout">
+            <section class="booking-calendar">
+            <h2>Check Availability</h2>
+                <form class="calendar-form">
+                <label for="start-date">Start Date</label>
+                <input type="date" id="start-date" name="start-date" required>
+
+                <label for="end-date">End Date</label>
+                <input type="date" id="end-date" name="end-date" required>
+
+                <button type="submit">Check Availability</button>
+            </form>
+        </section>
+            <div class="trip-filters">
+                <h2>Find Your Perfect Adventures</h2>
+
+                <form class="filters-form">
+                    <!-- Destination Type -->
+                    <label for="destination">Destination Type:</label>
+                    <select id="destination" name="destination">
+                        <option value="">All</option>
+                        <option value="beach">Beach</option>
+                        <option value="safari">Safari</option>
+                        <option value="mountain">Mountain</option>
+                        <option value="desert">Desert</option>
+                        <option value="rainforest">Rainforest</option>
+                    </select>
+
+                    <!-- Duration -->
+                    <label for="duration">Duration:</label>
+                    <select id="duration" name="duration">
+                        <option value="">All</option>
+                        <option value="weekend">Weekend</option>
+                        <option value="weeklong">Week-long</option>
+                    </select>
+
+                    <!-- Budget -->
+                    <label for="budget">Budget: <span id="budget-value">$1000</span></label>
+                    <input type="range" id="budget" name="budget" min="500" max="2000" step="50" value="1000"
+                        oninput="document.getElementById('budget-value').textContent = '$' + this.value">
+
+                    <!-- Rating -->
+                    <label for="rating">Minimum Rating:</label>
+                    <select id="rating" name="rating">
+                        <option value="">All</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="5">★★★★★</option>   
+           
+            </select>
+            <button type="submit">Apply Filters</button>
+            </form>
+         </div>
+        </section>
+
+        <section class="featured-layout">
+
+        <div class="featured-trips">
+
+            <h2>Featured Trips</h2>
+        
+        
+            <div class="trip-gallery">
+                <div class="trip-card">      
+                    <img src="images/trip1.jpg" alt="Trip 1 Image">
+                    <h3>Soul Maps & Sunset Laps</h3>
+                    <p>This trip taught me that joy lives in the detours. Laughing till my cheeks hurt with my people,
+                        chasing sunsets that painted the sky like a love letter, and finding magic in the unplanned.
+                        Turns out, the best stories start with a “why not?” 🌿✨ #SoulJourney #MemoriesInMotion</p>
+                </div>
+                <div class="trip-card">
+                    <img src="images/trip2.jpg" alt="Trip 2 Image">
+                    <h3>Paths Paved in Laughter</h3>
+                    <p>This journey whispered that connection is the compass. Sharing stories under star-streaked skies,
+                        tracing trails that felt like the earth’s heartbeat, and realizing home isn’t a place—it’s the
+                        people who make every mile glow. 🌌🚙 #HeartbeatHighways #TogetherWeRoam</p>
+                </div>
+                <div class="trip-card">
+                    <img src="images/trip3.jpg" alt="Trip 3 Image">
+                    <h3>Guided by Starlight</h3>
+                    <p>Dave taught me that roads don’t just lead to places—they lead to versions of yourself. Chasing
+                        horizons where the asphalt hummed lullabies, and learning that adventure isn’t a destination…
+                        it’s who you become along the way. 🌄📸 #WanderWithWonder #EchoesOfEverywhere</p>
+                </div>
+            </div>
+            <a href="contact.html" class="action">Click here to contact us.</a>
+        </div>
+    </section>
+
+<section class="trips-table">
+  <h2>All Trips Overview</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Trip Name</th>
+        <th>Duration</th>
+        <th>Price</th>
+        <th>Location</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Safari</td>
+        <td>5 Days</td>
+        <td>$1,200</td>
+        <td>Kenya</td>
+        <td>★★★★☆</td>
+      </tr>
+      <tr>
+        <td>Mountains</td>
+        <td>3 Days</td>
+        <td>$850</td>
+        <td>Rwanda</td>
+        <td>★★★★★</td>
+      </tr>
+      <tr>
+        <td>Beach</td>
+        <td>7 Days</td>
+        <td>$1,500</td>
+        <td>Seychelles</td>
+        <td>★★★★☆</td>
+      </tr>
+      <tr>
+        <td>Desert</td>
+        <td>4 Days</td>
+        <td>$950</td>
+        <td>Morocco</td>
+        <td>★★★☆☆</td>
+      </tr>
+      <tr>
+        <td>Rainforest</td>
+        <td>6 Days</td>
+        <td>$1,100</td>
+        <td>Congo</td>
+        <td>★★★★☆</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+ </main>
+
+    <footer>
+        <p> &copy; 2025 | The Rapid Splash | Babatunde John Ogunleye</p>
+         <a href="images/tripspagewireframe.png" class="footer-menu">Wireframe</a>
+        <div class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.webp" alt="Facebook Logo">
+            </a>
+            <a href="https://X-Twitter.com" target="_blank">
+                <img src="images/twittericon.webp" alt="X-Twitter Logo">
+            </a>
+            <a href="https://Instagram.com" target="_blank">
+                <img src="images/instagramicon.webp" alt="Instagram Logo">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

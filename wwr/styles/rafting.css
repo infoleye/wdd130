@@ -408,3 +408,435 @@ figure:nth-of-type(even) {
 .footer-menu{
     color: #01111d;
 }
+
+
+
+
+/************************************************
+*
+*           CSS FOR HOME PAGE
+*
+*************************************************/
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.5;
+    background-color:#d4e1eb;
+    color: #2a0208;
+}
+
+
+.newsletter h2  {
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 1em 0;
+    color: #0f65a3;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    
+}
+
+.newsletterform {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  background-color: #5c0e0e;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin: 2rem auto; /* Reduced vertical spacing */
+  max-width: 600px;   /* Smaller width for a tighter layout */
+}
+
+.newsletterform fieldset {
+  padding: 2rem;
+  margin: 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.newsletterform label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  color: #8bc6ef;
+}
+
+.newsletterform input {
+    padding: 1rem;
+}
+
+.newsletterform button {
+  padding: 0.75rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.newsletterform button:hover {
+  background-color: #09032b;
+}
+
+.adventurestrips {
+  text-align: center;
+  padding: .5rem;
+  background-color: #407451; /* optional light background */
+}
+
+.adventurestrips h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f3eced; /* or any strong accent */
+  font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+
+}
+
+.adventure-image img {
+  width: 1300%;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+  max-width: 450px;  
+  height: auto;
+}
+
+.caption {
+  position: absolute;
+  top: 235%;
+  max-width: 300px;
+  right: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.9);
+  color: #2a0208;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  border-left: 6px solid #0077cc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+.caption:hover {
+  background: rgba(81, 58, 58, 0.8);
+}
+
+.images2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.images2 figure {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.images2 figure:hover {
+  transform: scale(1.03);
+}
+
+.images2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.images2 figcaption {
+  font-weight: bold;
+  color: #0077cc;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.images2 p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+
+.correspondence {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(76, 1, 1, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.correspondence p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+
+/************************************************
+*
+*           CSS FOR TRIPS PAGE
+*
+*************************************************/
+
+.trips h2 {
+  color: var(--primary-color);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align:center;
+  
+}
+
+.trips-layout {
+  display: grid;
+  grid-template-columns: 1fr 550px; /* Main content + sidebar */
+  gap: .5rem;
+  padding: .5rem;
+  align-items: start;
+  gap: 280px;
+  
+
+}
+
+.trip-filters {
+  background-color: #96c3eb;
+  padding: 2rem;
+  margin: 1rem;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  
+  
+}
+
+.trip-filters h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #0a2b42;
+}
+
+.filters-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.filters-form label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  display: block;
+  color: #333;
+}
+
+.filters-form select,
+.filters-form input[type="range"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.filters-form button {
+  grid-column: 1 / -1;
+  padding: 0.75rem;
+  background-color: #040f16;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filters-form button:hover {
+  background-color: #005fa3;
+}
+
+ 
+.featured-trips h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.8rem;
+  color: #0496FF;
+
+}
+
+.trip-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6.5rem;
+  justify-content: center;
+}
+
+.trip-card {
+  flex: 0 1 350px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  
+}
+
+.trip-card h3, p {
+  color: #01111d;
+}
+
+.trip-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.featured-layout {
+  padding: 2rem;
+  margin-top: 0;
+  background-color: #46020c;
+  
+
+}
+
+
+.action {
+  position: absolute;
+  top: 65%;
+  max-width: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(6, 223, 72, 0.9);
+  color: #2a0208;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+.action:hover {
+  background: rgba(81, 58, 58, 0.8);
+}
+
+
+.booking-calendar {
+  background-color: #0cc4ae;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: 2rem auto;
+  text-align: center;
+  width: 150%;
+  
+  
+}
+
+.booking-calendar h2 {
+  font-size: 1.6rem;
+  color: #03233a;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.calendar-form label {
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+.calendar-form input[type="date"] {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.calendar-form button {
+  padding: 0.75rem;
+  background-color: #040f16;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.calendar-form button:hover {
+  background-color: #005fa3;
+}
+
+
+.trips-table {
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.trips-table h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #00080e;
+  margin-bottom: 1.5rem;
+}
+
+.trips-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trips-table th,
+.trips-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #00080e;
+}
+
+.trips-table th {
+  background-color: #043050;
+  color: white;
+  font-weight: bold;
+}
+
+.trips-table tr:hover {
+  background-color: #f0f8ff;
+}

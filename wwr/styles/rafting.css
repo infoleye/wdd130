@@ -201,14 +201,16 @@ footer .socialmedia a:hover {
 
 
 .contactform {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+grid-column: 1/6;
 }
+ 
 
 .contactform fieldset {
   border: none;
@@ -270,7 +272,7 @@ footer .socialmedia a:hover {
 }
 
 .address {
-    grid-column: 7/12;
+    grid-column: 6/13;
     grid-row: 2/3;
     background-color: var(--primary-color);
     display: flex;
@@ -280,6 +282,7 @@ footer .socialmedia a:hover {
     padding: .5em;
     border-radius: 8px;
     margin-top: -1.5rem;
+
 
 }
 
@@ -600,7 +603,7 @@ letter-spacing: 1px;
 *
 *************************************************/
 
-.trips h2 {
+.trips h1 {
   color: var(--primary-color);
   font-family: 'Segoe UI', sans-serif;
   font-size: 1.8rem;
